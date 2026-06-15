@@ -61,10 +61,17 @@
     --color-mark-foreground: #0f0f0c;
   }
 
-  /* Arabic uses Thmanyah Sans for both display and body. */
+  /* Arabic uses Thmanyah Sans for display and body (matches the bcards identity).
+     Mono keeps JetBrains for Latin/numbers but falls back to Thmanyah for Arabic
+     glyphs, so mono labels don't drop to a mismatched system font. */
   [dir="rtl"] {
     --font-display: "Thmanyah Sans", "Bricolage Grotesque", sans-serif;
     --font-sans: "Thmanyah Sans", "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", "Thmanyah Sans", monospace;
+  }
+  /* Arabic is cursive — neutralize wide letter-spacing utilities under RTL. */
+  [dir="rtl"] [class*="tracking-"] {
+    letter-spacing: 0;
   }
 
   html {

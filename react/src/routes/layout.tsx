@@ -9,11 +9,11 @@ import { cn } from "../lib/cn";
 export function Layout() {
   const { t, lang, setLang } = useI18n();
   const [dark, setDark] = useState(() =>
-    typeof localStorage !== "undefined" ? localStorage.getItem("spark-theme") === "dark" : false,
+    typeof localStorage !== "undefined" ? localStorage.getItem("lime-theme") === "dark" : false,
   );
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
-    localStorage.setItem("spark-theme", dark ? "dark" : "light");
+    localStorage.setItem("lime-theme", dark ? "dark" : "light");
   }, [dark]);
 
   const navItem = (to: string, label: string) => (

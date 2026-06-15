@@ -33,8 +33,15 @@
   --color-mark-foreground: #0f0f0c;
   --color-success: #16a34a;
 
-  --radius: 1.1rem;
-  --radius-lg: 1.75rem;
+  /* Radius scale — Lime is generously rounded, never square. These map to
+     Tailwind utilities: rounded-sm / rounded-md / rounded-lg / rounded-xl,
+     and the kit also references var(--radius) directly via rounded-[--radius]. */
+  --radius-sm: 0.85rem; /* chips, small controls            → rounded-sm  */
+  --radius-md: 1.5rem;  /* surfaces: cards, inputs, panels   → rounded-md  */
+  --radius: 1.5rem;     /* alias of -md (rounded-[--radius])              */
+  --radius-lg: 2rem;    /* large cards & sections            → rounded-lg  */
+  --radius-xl: 2.75rem; /* hero panels, big bento            → rounded-xl  */
+
   --shadow-card: 0 20px 44px -26px rgba(15, 15, 12, 0.4);
 }
 

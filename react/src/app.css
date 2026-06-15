@@ -31,7 +31,7 @@ body {
   margin: 0;
 }
 
-@keyframes spark-marquee {
+@keyframes lime-marquee {
   from {
     transform: translateX(0);
   }
@@ -39,9 +39,9 @@ body {
     transform: translateX(-50%);
   }
 }
-[dir="rtl"] .spark-marquee-track {
+[dir="rtl"] .lime-marquee-track {
   animation-direction: reverse;
 }
-.spark-marquee-track {
-  animation: spark-marquee 28s linear infinite;
+.lime-marquee-track {
+  animation: lime-marquee 28s linear infinite;
 }

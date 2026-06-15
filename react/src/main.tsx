@@ -21,8 +21,8 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  // Works at "/" in dev and under any subpath (e.g. /demos/spark/) when built
-  // with `vite build --base=/demos/spark/`.
+  // Works at "/" in dev and under any subpath (e.g. /demos/lime/) when built
+  // with `vite build --base=/demos/lime/`.
   { basename: import.meta.env.BASE_URL },
 );
 

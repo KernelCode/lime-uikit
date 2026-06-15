@@ -35,11 +35,12 @@ tokens and components.
 | **Primary** | `#c8f135` (acid lime) |
 | **Mark** | `#c8f135` (highlight) |
 | **Background** | `#f5f3ea` cream · `#0e0e0b` ink (dark) |
-| **Display** | Hanken Grotesk |
-| **Body** | Inter |
+| **Display** | Bricolage Grotesque (EN) · Thmanyah Sans (AR) |
+| **Body** | Inter (EN) · Thmanyah Sans (AR) |
 | **Mono** | JetBrains Mono |
-| **Radius** | 1.1rem |
+| **Radius** | 1.5rem cards · 2rem sections · pill buttons |
 | **Modes** | light + dark |
+| **Responsive** | mobile → tablet → desktop (Tailwind `sm`/`md`/`lg`/`xl`) |
 | **i18n** | EN + AR with full RTL |
 
 **Components** — Button · Card · Input · Badge · Pill · Mark · Marquee · Container

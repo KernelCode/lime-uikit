@@ -17,14 +17,14 @@ const I18nContext = createContext<I18nValue | null>(null);
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>(() => {
     if (typeof localStorage === "undefined") return "en";
-    return (localStorage.getItem("spark-lang") as Lang) ?? "en";
+    return (localStorage.getItem("lime-lang") as Lang) ?? "en";
   });
   const dir = lang === "ar" ? "rtl" : "ltr";
 
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = dir;
-    localStorage.setItem("spark-lang", lang);
+    localStorage.setItem("lime-lang", lang);
   }, [lang, dir]);
 
   return (

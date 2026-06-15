@@ -1,6 +1,32 @@
 @import "tailwindcss";
 @import "../../design/theme.css";
 
+/* Arabic display + body face (matches the reference identity). Self-hosted. */
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("./fonts/ThmanyahSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("./fonts/ThmanyahSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("./fonts/ThmanyahSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("./fonts/ThmanyahSans-Black.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
 body {
   margin: 0;
 }

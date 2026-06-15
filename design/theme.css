@@ -1,11 +1,11 @@
 /**
  * Lime — Tailwind v4 theme (CSS-first). A limey product kit: warm cream + near-
- * black ink + a vivid acid-lime accent, heavy Hanken Grotesk display, monospace
+ * black ink + a vivid acid-lime accent, heavy Bricolage Grotesque display, monospace
  * micro-labels, highlight-marker headings. Light + dark + full RTL (Arabic).
  */
 @theme {
-  --font-display: "Hanken Grotesk", "Cairo", system-ui, sans-serif;
-  --font-sans: "Inter", "Cairo", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Thmanyah Sans", system-ui, sans-serif;
+  --font-sans: "Inter", "Thmanyah Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
   /* brand scale (acid lime / chartreuse) */
@@ -54,10 +54,10 @@
     --color-mark-foreground: #0f0f0c;
   }
 
-  /* Arabic prefers Cairo for both display and body. */
+  /* Arabic uses Thmanyah Sans for both display and body. */
   [dir="rtl"] {
-    --font-display: "Cairo", "Hanken Grotesk", sans-serif;
-    --font-sans: "Cairo", "Inter", sans-serif;
+    --font-display: "Thmanyah Sans", "Bricolage Grotesque", sans-serif;
+    --font-sans: "Thmanyah Sans", "Inter", sans-serif;
   }
 
   html {

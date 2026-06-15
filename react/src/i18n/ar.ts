@@ -72,7 +72,7 @@ export const ar: Dict = {
     title: "نظام تصميم Lime",
     sub: "كل الرموز والمكوّنات في مكان واحد. بدّل الوضع الداكن وRTL من الشريط العلوي.",
     sections: { colors: "الألوان", type: "الخطوط", buttons: "الأزرار", pills: "الشارات", inputs: "الحقول", cards: "البطاقات" },
-    display: "عرض / Hanken Grotesk",
+    display: "عرض / Bricolage Grotesque",
     heading: "عنوان / 800",
     body: "نص / Inter — نصّ تجريبي بالعربية والإنجليزية.",
     mono: "أحادي / JetBrains — 0123456789",

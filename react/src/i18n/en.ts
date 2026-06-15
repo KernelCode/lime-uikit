@@ -70,7 +70,7 @@ export const en = {
     title: "Lime design system",
     sub: "Every token and component in one place. Toggle dark mode and RTL in the top bar.",
     sections: { colors: "Colors", type: "Typography", buttons: "Buttons", pills: "Pills & badges", inputs: "Inputs", cards: "Cards" },
-    display: "Display / Hanken Grotesk",
+    display: "Display / Bricolage Grotesque",
     heading: "Heading / 800",
     body: "Body / Inter — the quick brown fox jumps over the lazy dog.",
     mono: "Mono / JetBrains — 0123456789",

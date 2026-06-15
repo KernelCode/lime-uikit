@@ -1,0 +1,90 @@
+{
+  "$schema": "https://uikit.dev/schema/v1.json",
+  "manifestVersion": 1,
+  "id": "lime",
+  "name": "Lime",
+  "version": "0.1.0",
+  "description": "Limey digital-card kit — cream + ink + acid lime, Hanken Grotesk display, highlight-marker headings. Light + dark, EN/AR + RTL.",
+  "author": { "name": "kernelcode", "github": "kernelcode" },
+  "license": "MIT",
+  "homepage": "https://uikit.studio/demos/lime/",
+  "repository": "https://github.com/kernelcode/lime-uikit",
+
+  "categories": ["marketing", "landing"],
+  "tags": ["lime", "cream", "grotesk", "rtl"],
+
+  "tech": {
+    "frameworks": ["react"],
+    "styling": "both",
+    "tailwindVersion": "^4.0.0",
+    "icons": "lucide",
+    "deps": ["class-variance-authority", "clsx", "tailwind-merge"]
+  },
+
+  "design": {
+    "tokens": "design/tokens.json",
+    "tailwindPreset": "design/tailwind-preset.js",
+    "themeCss": "design/theme.css",
+    "fonts": [
+      { "family": "Hanken Grotesk", "source": "google" },
+      { "family": "Inter", "source": "google" }
+    ],
+    "palettes": [{ "name": "default", "primary": "#c8f135" }],
+    "modes": ["light", "dark"]
+  },
+
+  "surface": {
+    "components": [
+      { "name": "Button", "react": "react/src/components/button.tsx" },
+      { "name": "Card", "react": "react/src/components/card.tsx" },
+      { "name": "Input", "react": "react/src/components/input.tsx" },
+      { "name": "Badge", "react": "react/src/components/badge.tsx" },
+      { "name": "Pill", "react": "react/src/components/pill.tsx" },
+      { "name": "Mark", "react": "react/src/components/mark.tsx" },
+      { "name": "Marquee", "react": "react/src/components/marquee.tsx" },
+      { "name": "Container", "react": "react/src/components/container.tsx" }
+    ],
+    "blocks": [
+      { "name": "Navbar" },
+      { "name": "Footer" },
+      { "name": "StatCards" }
+    ],
+    "templates": [
+      { "name": "Landing", "route": "/", "preview": "screenshots/landing.png" },
+      { "name": "Pricing", "route": "/pricing" },
+      { "name": "Dashboard", "route": "/dashboard" },
+      { "name": "Showcase", "route": "/components" }
+    ]
+  },
+
+  "prompts": {
+    "origin": "prompts/build.md",
+    "extend": "prompts/extend.md",
+    "skillVersion": "uikit-standard@1.0"
+  },
+
+  "consume": {
+    "skill": ".claude/skills/lime",
+    "skillName": "lime-ui",
+    "steps": [
+      "git clone https://github.com/kernelcode/lime-uikit my-app",
+      "cd my-app && npx uikit-studio init",
+      "Open in Claude Code and ask: 'build a digital business card page using this kit'"
+    ],
+    "entry": "USAGE.md",
+    "requires": ["node>=20", "tailwind>=4"]
+  },
+
+  "media": {
+    "demoUrl": "https://uikit.studio/demos/lime/",
+    "screenshots": [
+      { "kind": "logo", "src": "screenshots/logo.svg" },
+      { "kind": "landing", "src": "screenshots/landing.png" }
+    ]
+  },
+
+  "registry": {
+    "install": "npx uikit-studio add lime",
+    "components": "registry/index.json"
+  }
+}

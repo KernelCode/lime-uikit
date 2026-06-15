@@ -1,0 +1,82 @@
+/**
+ * Lime — Tailwind v4 theme (CSS-first). A limey product kit: warm cream + near-
+ * black ink + a vivid acid-lime accent, heavy Hanken Grotesk display, monospace
+ * micro-labels, highlight-marker headings. Light + dark + full RTL (Arabic).
+ */
+@theme {
+  --font-display: "Hanken Grotesk", "Cairo", system-ui, sans-serif;
+  --font-sans: "Inter", "Cairo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* brand scale (acid lime / chartreuse) */
+  --color-brand-50: #f8ffe5;
+  --color-brand-100: #eeffb8;
+  --color-brand-200: #e1ff80;
+  --color-brand-300: #d3f94d;
+  --color-brand-400: #c8f135;
+  --color-brand-500: #a8d119;
+  --color-brand-600: #84a300;
+  --color-brand-700: #5f7600;
+
+  /* light theme */
+  --color-background: #f5f3ea; /* cream */
+  --color-foreground: #0f0f0c; /* ink */
+  --color-card: #ffffff;
+  --color-muted: #ece9dd;
+  --color-muted-foreground: #6b6a5e;
+  --color-border: #e2ded0;
+  --color-primary: #c8f135; /* acid lime */
+  --color-primary-foreground: #0f0f0c; /* black text on lime */
+  --color-ink: #0e0e0b; /* dark sections on a light page */
+  --color-ink-foreground: #f5f3ea;
+  --color-mark: #c8f135; /* highlight-marker background */
+  --color-mark-foreground: #0f0f0c;
+  --color-success: #16a34a;
+
+  --radius: 1.1rem;
+  --radius-lg: 1.75rem;
+  --shadow-card: 0 20px 44px -26px rgba(15, 15, 12, 0.4);
+}
+
+@layer base {
+  .dark {
+    --color-background: #0e0e0b;
+    --color-foreground: #f4f3ea;
+    --color-card: #18180f;
+    --color-muted: #1f1f15;
+    --color-muted-foreground: #a7a594;
+    --color-border: #2b2b1e;
+    --color-primary: #c8f135;
+    --color-primary-foreground: #0f0f0c;
+    --color-ink: #080805;
+    --color-ink-foreground: #f4f3ea;
+    --color-mark: #c8f135;
+    --color-mark-foreground: #0f0f0c;
+  }
+
+  /* Arabic prefers Cairo for both display and body. */
+  [dir="rtl"] {
+    --font-display: "Cairo", "Hanken Grotesk", sans-serif;
+    --font-sans: "Cairo", "Inter", sans-serif;
+  }
+
+  html {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Reusable surface utilities (work without writing component classes). */
+@utility dotted {
+  background-image: radial-gradient(var(--color-border) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+@utility mark {
+  background-color: var(--color-mark);
+  color: var(--color-mark-foreground);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 0.18em;
+}

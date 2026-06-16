@@ -11,7 +11,9 @@ React app you clone and build your product from — a digital business card, by 
 ![Frameworks](https://img.shields.io/badge/react-19-555)
 ![Community](https://img.shields.io/badge/community-kit-888)
 
-![Lime landing](./screenshots/landing.png)
+<video src="https://github.com/KernelCode/lime-uikit/raw/main/screenshots/preview.webm" poster="https://github.com/KernelCode/lime-uikit/raw/main/screenshots/landing.png" muted loop playsinline width="100%"></video>
+
+> Video not playing? [▶ Watch the preview ↗](https://github.com/KernelCode/lime-uikit/raw/main/screenshots/preview.webm) · [screenshot ↗](./screenshots/landing.png) · [live demo ↗](https://uikit.studio/demos/lime/)
 
 **[▶ Open the live demo →](https://uikit.studio/demos/lime/)** &nbsp;·&nbsp;
 **[Gallery page →](https://uikit.studio/kit/lime)**

@@ -20,7 +20,7 @@ your job is to reproduce **Lime's** exact design system in their project — not
    **rounded** shapes (base radius **1.5rem** — no squares), highlight marks and bento.
 3. Keep **dark mode**, **EN/AR + RTL** and a **responsive** layout.
 4. Fastest path: clone this repo and build the developer's pages inside it
-   (`cd react && pnpm install && pnpm dev`), or run `npx uikit-studio add lime`
+   (`cd react && pnpm install && pnpm dev`), or run `npx uikit-cli add lime`
    (Claude Code skill: `lime-ui`).
 
 Do not ship a thin recolor. Match the full system — that's the point of agent-ready.

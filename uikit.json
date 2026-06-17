@@ -68,7 +68,7 @@
     "skillName": "lime-ui",
     "steps": [
       "git clone https://github.com/kernelcode/lime-uikit my-app",
-      "cd my-app && npx uikit-studio init",
+      "cd my-app && npx uikit-cli init",
       "Open in Claude Code and ask: 'build a digital business card page using this kit'"
     ],
     "entry": "USAGE.md",
@@ -84,7 +84,7 @@
   },
 
   "registry": {
-    "install": "npx uikit-studio add lime",
+    "install": "npx uikit-cli add lime",
     "components": "registry/index.json"
   }
 }

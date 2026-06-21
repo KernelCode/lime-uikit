@@ -5,7 +5,7 @@ import { cn } from "../lib/cn";
 export function Avatar({ name = "", src, className }: { name?: string; src?: string; className?: string }) {
   const initials = name.trim().split(/\s+/).slice(0, 2).map((p) => p[0]).join("");
   return (
-    <span className={cn("grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full bg-primary/10 font-display text-sm font-bold text-primary", className)}>
+    <span className={cn("grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full bg-primary/15 font-display text-sm font-bold text-primary-ink", className)}>
       {src ? <img src={src} alt={name} className="h-full w-full object-cover" /> : initials}
     </span>
   );

@@ -112,7 +112,7 @@ export function Toggle({ pressed, className, ...props }: { pressed?: boolean } &
       aria-pressed={pressed}
       className={cn(
         "inline-flex h-10 items-center gap-2 rounded-[var(--radius)] border px-4 text-sm font-medium transition-colors",
-        pressed ? "border-primary bg-primary/10 text-primary" : "border-border bg-card text-muted-foreground hover:bg-muted",
+        pressed ? "border-primary bg-primary/15 text-primary-ink" : "border-border bg-card text-muted-foreground hover:bg-muted",
         className,
       )}
       {...props}

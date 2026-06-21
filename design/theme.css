@@ -27,6 +27,7 @@
   --color-border: #e2ded0;
   --color-primary: #c8f135; /* acid lime */
   --color-primary-foreground: #0f0f0c; /* black text on lime */
+  --color-primary-ink: #5f7600; /* readable lime for text/icons/markers on light surfaces — bright lime is illegible as a foreground */
   --color-ink: #0e0e0b; /* dark sections on a light page */
   --color-ink-foreground: #f5f3ea;
   --color-mark: #c8f135; /* highlight-marker background */
@@ -55,6 +56,7 @@
     --color-border: #2b2b1e;
     --color-primary: #c8f135;
     --color-primary-foreground: #0f0f0c;
+    --color-primary-ink: #c8f135; /* on dark surfaces the bright lime is already legible */
     --color-ink: #080805;
     --color-ink-foreground: #f4f3ea;
     --color-mark: #c8f135;

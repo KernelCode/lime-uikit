@@ -50,7 +50,7 @@ export function Pricing() {
                     <ul className="space-y-2 pt-2">
                       {tier.features.map((f) => (
                         <li key={f} className="flex items-center gap-2 text-sm">
-                          <Check className="h-4 w-4 shrink-0 text-primary" />
+                          <Check className="h-4 w-4 shrink-0 text-primary-ink" />
                           {f}
                         </li>
                       ))}

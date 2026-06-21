@@ -12,7 +12,7 @@ function AreaChart({ series }: { series: number[] }) {
   const pts = series.map((v, i) => [pad + (i / (series.length - 1)) * (w - pad * 2), h - pad - (v / max) * (h - pad * 2)]);
   const line = pts.map((p) => p.join(",")).join(" ");
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="h-24 w-full text-primary" preserveAspectRatio="none">
+    <svg viewBox={`0 0 ${w} ${h}`} className="h-24 w-full text-primary-ink" preserveAspectRatio="none">
       <polygon points={`${pad},${h - pad} ${line} ${w - pad},${h - pad}`} fill="currentColor" opacity="0.15" />
       <polyline points={line} fill="none" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round" />
     </svg>

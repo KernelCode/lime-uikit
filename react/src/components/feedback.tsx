@@ -20,7 +20,7 @@ export function Alert({
   children,
   className,
 }: { title?: string; children?: React.ReactNode } & VariantProps<typeof alert> & { className?: string }) {
-  const dot = { info: "bg-primary", success: "bg-success", warning: "bg-amber-500", danger: "bg-rose-500" }[variant ?? "info"];
+  const dot = { info: "bg-primary-ink", success: "bg-success", warning: "bg-amber-500", danger: "bg-rose-500" }[variant ?? "info"];
   return (
     <div className={cn(alert({ variant }), className)} role="alert">
       <span className={cn("mt-1.5 h-2 w-2 shrink-0 rounded-full", dot)} />
